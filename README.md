@@ -67,3 +67,23 @@ CHALLENGE-7_5/
 ├── requirements.txt              # Standardized environment scientific dependencies
 │
 └── Part_[A/B/C]_...ipynb         # Interactive verification Jupyter Notebooks
+
+
+## 📈 Summary of Experimental Variants
+
+Our experimental setup evaluated the following network variants across three independent runs:
+
+- **$M1$ (Feature Extraction):** Backbone parameters are frozen. Only the modified fully connected (`fc`) classification layer (**3,078 parameters**) is trained on real photos.
+- **$M2$ (Full Source Fine-Tuning):** The entire network (**~11.1M parameters**) is fine-tuned end-to-end on real photos.
+- **$M2$ Cross-Evaluation:** The trained $M2$ model is evaluated directly on the target **Infograph** domain without adaptation. This serves as the lower-bound performance and isolates the pure domain shift penalty ($\Delta_{shift}$).
+- **$M4$ (Few-Shot Target Fine-Tuning):** The network is fine-tuned directly on a small subset of real Infograph images.
+- **$M5$ (NST Augmentation):** The model is trained with the augmented hybrid dataset (**Real Photos + NST-synthesized images**). This strategy achieved a **Net Accuracy Gain of +8.26%** over the unadapted cross-evaluation baseline.
+
+---
+
+## 🚀 Getting Started & Replication
+
+To reproduce the full execution matrix, model checkpoints, and figures locally, follow the terminal instructions documented in:
+
+- [`INSTRUCTIONS.md`](INSTRUCTIONS.md) — complete replication commands
+- [`CHECKLIST.md`](CHECKLIST.md) — experimental results matrix, training curves, numerical statistics ($\mu \pm \sigma$), and final report summary
