@@ -8,7 +8,7 @@
 
 | Name | Student Code | Email / Affiliation |
 | :--- | :---: | :--- |
-| **Barrera Mosquera** Jairo Arturo | 20231020030 | Universidad Distrital F.J.C. |
+| **Barrera Mosquera** Jairo Arturo | 20222020142 | Universidad Distrital F.J.C. |
 | **Barriga Gamez** Carlos Alberto | 20222020179 | Universidad Distrital F.J.C. |
 | **Arenas Gutierrez** Anderson David | 20231020030 | Universidad Distrital F.J.C. |
 
