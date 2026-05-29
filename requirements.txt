@@ -1,0 +1,10 @@
+torch
+torchvision
+torch-directml
+numpy
+matplotlib
+scikit-learn
+tensorboard
+opencv-python
+pillow
+grad-cam
