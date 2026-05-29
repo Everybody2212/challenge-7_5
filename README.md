@@ -67,7 +67,7 @@ CHALLENGE-7_5/
 ├── requirements.txt              # Standardized environment scientific dependencies
 │
 └── Part_[A/B/C]_...ipynb         # Interactive verification Jupyter Notebooks
-
+```
 
 ## 📈 Summary of Experimental Variants
 
